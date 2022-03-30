@@ -1,0 +1,43 @@
+body {
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    margin-bottom: 0px;
+    color:000;
+}
+.info {
+    border: solid;
+    margin-bottom: 100px;
+    
+}
+.info tr {
+    border-bottom: solid;
+    border-width: 0.5px;
+}
+.info tr td {
+    padding:10px 10px;  
+}
+.notice {
+     
+}
+.schedule tr {
+    border-bottom: solid;
+}
+table {
+    display: block;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contents {
+    width:80%;
+    text-align: center;
+}
+.day {
+    width:20%;
+}
+.yotei {
+    font-size: 50px;
+}
