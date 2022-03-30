@@ -1,7 +1,6 @@
 @extends('layout')
 @section('content')
-<div>klkk</div>
-<!-- <head>
+<head>
         <mete charset="UTF-8">
             <titile></title>
             <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
@@ -12,6 +11,10 @@
         {{ session('login_success') }}
         @endif
     <h1>お知らせ</h1>
+    <ul>
+        <li><a href="{{ url('bbscreate') }}">記事投稿</a></li>
+        <li><a href="{{ url('create') }}">予定投稿</a></li>
+    </ul>
     <table class="info">
        @foreach($adminpost as $adminbbs)
        <tr>
@@ -29,5 +32,5 @@
        <td>{{ $sche->scheduledate }}</td><td>{{ $sche->schedule_title }}</td><td>{{ $sche->plase }}</td>
     </tr>
        @endforeach
-       </table> -->
+       </table>
 @endsection

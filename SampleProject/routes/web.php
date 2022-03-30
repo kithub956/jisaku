@@ -22,7 +22,7 @@ Route::get('/toukou', function () {
     return view('toukou');
 });
 
-Route::get('/chat.top', 'ChatController@index')->name('showTop');
+// Route::get('/chat.top', 'ChatController@index')->name('showTop');
 
 Route::get('/keijiban', 'ChatController@showList');
 Route::post('/keijiban', 'ChatController@add')->name('keijiban');
@@ -72,5 +72,5 @@ Route::get('/bbscreate', function () {
 });
 Route::get('/detail/{id}', 'Auth\AdminController@detail')->name('detail');
 
-Route::get('chat.top', 'ChatController@userindex')->name('user.index');
+Route::get('chat.top', 'ChatController@index')->name('index');
 Route::post('chat.top', 'ChatController@showschedule')->name('showschedule');

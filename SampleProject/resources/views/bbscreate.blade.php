@@ -16,6 +16,11 @@
                         <p class="error_message">{{ $errors->first('message')}}</p>
                     @endif
                 </div>
+                <select name="age">
+  <option value="0">会議</option>
+  <option value="1">朝礼</option>
+  <option value="2">その他</option>
+</select>
                 <div class="btnWrapper">
                     <input type="submit" valeu="投稿"></input>
                 </div>

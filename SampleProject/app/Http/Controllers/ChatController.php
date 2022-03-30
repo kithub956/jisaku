@@ -108,16 +108,16 @@ class ChatController extends Controller
     {
         return view('/register');
     }
-    public function userindex()
+    public function index()
     {
         $schedule = Schedule::all();
         $adminpost = Adminpost::all();
-        return view('/chat.top', ['schedule' => $schedule, 'adminpost' => $adminpost]);
+        return view('chat.top', ['schedule' => $schedule, 'adminpost' => $adminpost]);
     }
     public function showschedule(Request $request)
     {
         $this->createScheduleOrAdminPost($request);
-        return $this->userindex();
+        return $this->index();
     }
 
     public function createScheduleOrAdminPost(Request $request)

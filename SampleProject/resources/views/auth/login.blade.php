@@ -10,6 +10,7 @@
                 <div class="card-body">
                     @isset($authgroup)
                     <form method="POST" action='{{ url("login/$authgroup") }}'>
+                    @csrf
                     @else
                     <form method="POST" action="{{ route('login') }}">
                         @endisset
